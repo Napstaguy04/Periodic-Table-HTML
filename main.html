@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Periodic Table</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- For sliding stuff -->
+    <div id="periodic-table-container">
+        <h1 id="title"> Periodic Table of Elements </h1>
+
+        <table class="periodic-table">
+            
+            <tr>
+                <td class="reactive-nonmetal">1<br><span class="element-abbreviation">H</span><br><span class="element-name"> Hydrogen </span></td>
+                <td colspan="17"></td>
+                <td class="nobel-gas">2<br><span class="element-abbreviation">He</span><br><span class="element-name"> Helium </span></td>
+            </tr>
+            <tr>
+                <td class="alkali-metals">3<br><span class="element-abbreviation">Li</span><br><span class="element-name"> Lithium </span></td>
+                <td>4<br><span class="element-abbreviation">Be</span><br><span class="element-name"> Beryllium </span></td>
+                <td colspan="11"></td>
+                <td class="metaloid">5<br><span class="element-abbreviation">B</span><br><span class="element-name"> Boron </span></td>
+                <td class="halogen">6<br><span class="element-abbreviation">C</span><br><span class="element-name"> Carbon </span></td>
+                <td class="halogen">7<br><span class="element-abbreviation">N</span><br><span class="element-name"> Nitrogen </span></td>
+                <td class="halogen">8<br><span class="element-abbreviation">O</span><br><span class="element-name"> Oxygen </span></td>
+                <td class="halogen">9<br><span class="element-abbreviation">F</span><br><span class="element-name"> Flourine </span></td>
+                <td class="nobel-gas">10<br><span class="element-abbreviation">Ne</span><br><span class="element-name"> Neon </span></td>
+            </tr>
+            <tr>
+                <td class="alkali-metals">11<br><span class="element-abbreviation">Na</span><br><span class="element-name"> Sodium </span></td>
+                <td class="alkali-earth">12<br><span class="element-abbreviation">Mg</span><br><span class="element-name"> Magnesium </span></td>
+                <td colspan="11"></td>
+                <td class="post-transition">13<br><span class="element-abbreviation">Al</span><br><span class="element-name"> Aluminium </span></td>
+                <td class="metaloid">14<br><span class="element-abbreviation">Si</span><br><span class="element-name"> Silicon </span></td>
+                <td class="halogen">15<br><span class="element-abbreviation">P</span><br><span class="element-name"> Phosphorus </span></td>
+                <td class="halogen">16<br><span class="element-abbreviation">S</span><br><span class="element-name"> Sulfur </span></td>
+                <td class="halogen">17<br><span class="element-abbreviation">Cl</span><br><span class="element-name"> Chlorine</span></td>
+                <td class="nobel-gas">18<br><span class="element-abbreviation">Ar</span><br><span class="element-name"> Argon </span></td>
+            </tr>
+            <tr>
+                <!-- Dear god help me -->
+                <td class="alkali-metals">19<br><span class="element-abbreviation">K</span><br><span class="element-name"> Potassium </span></td>
+                <td class="alkali-earth">20<br><span class="element-abbreviation">Ca</span><br><span class="element-name"> Calcium </span></td>
+                <td class="transition-metals">21<br><span class="element-abbreviation">Sc</span><br><span class="element-name"> Scandium </span></td>
+                <td colspan="1"></td>
+                <td class="transition-metals">22<br><span class="element-abbreviation">Ti</span><br><span class="element-name"> Titanium </span></td>
+                <td class="transition-metals">23<br><span class="element-abbreviation">V</span><br><span class="element-name"> Vanadium </span></td>
+                <td class="transition-metals">24<br><span class="element-abbreviation">Cr</span><br><span class="element-name"> Chromium </span></td>
+                <td class="transition-metals">25<br><span class="element-abbreviation">Mn</span><br><span class="element-name"> Manganese </span></td>
+                <td class="transition-metals">26<br><span class="element-abbreviation">Fe</span><br><span class="element-name"> Iron </span></td>
+                <td class="transition-metals">27<br><span class="element-abbreviation">Co</span><br><span class="element-name"> Cobalt </span></td>
+                <td class="transition-metals">28<br><span class="element-abbreviation">Ni</span><br><span class="element-name"> Nickel </span></td>
+                <td class="transition-metals">29<br><span class="element-abbreviation">Cu</span><br><span class="element-name"> Copper </span></td>
+                <td class="transition-metals">30<br><span class="element-abbreviation">Zn</span><br><span class="element-name"> Zinc </span></td>
+                <td class="post-transition">31<br><span class="element-abbreviation">Ga</span><br><span class="element-name"> Gallium </span></td>
+                <td class="metaloid">32<br><span class="element-abbreviation">Ge</span><br><span class="element-name"> Germanium </span></td>
+                <td class="metaloid">33<br><span class="element-abbreviation">As</span><br><span class="element-name"> Arsenic </span></td>
+                <td class="halogen">34<br><span class="element-abbreviation">Se</span><br><span class="element-name"> Selesium </span></td>
+                <td class="halogen">35<br><span class="element-abbreviation">Br</span><br><span class="element-name"> Bromine </span></td>
+                <td class="nobel-gas">36<br><span class="element-abbreviation">Kr</span><br><span class="element-name"> Krypton </span></td>
+            </tr>
+            <tr>
+                <!-- Maam why did you make me copypaste for an hour -->
+                <td class="alkali-metals">36<br><span class="element-abbreviation">Rb</span><br><span class="element-name"> Rubidium </span></td>
+                <td class="alkali-earth">37<br><span class="element-abbreviation">Sr</span><br><span class="element-name"> Strontium </span></td>
+                <td class="transition-metals">38<br><span class="element-abbreviation">Y</span><br><span class="element-name"> Yttrium </span></td>
+                <td colspan="1"></td>
+                <td class="transition-metals">39<br><span class="element-abbreviation">Zr</span><br><span class="element-name"> Zirconium </span></td>
+                <td class="transition-metals">40<br><span class="element-abbreviation">Nb</span><br><span class="element-name"> Niobium </span></td>
+                <td class="transition-metals">41<br><span class="element-abbreviation">Mo</span><br><span class="element-name"> Molybdenum </span></td>
+                <td class="transition-metals">42<br><span class="element-abbreviation">Tc</span><br><span class="element-name"> Technetium </span></td>
+                <td class="transition-metals">43<br><span class="element-abbreviation">Ru</span><br><span class="element-name"> Ruthenium </span></td>
+                <td class="transition-metals">44<br><span class="element-abbreviation">Rh</span><br><span class="element-name"> Rhodium </span></td>
+                <td class="transition-metals">45<br><span class="element-abbreviation">Pd</span><br><span class="element-name"> Palladium </span></td>
+                <td class="transition-metals">46<br><span class="element-abbreviation">Ag</span><br><span class="element-name"> Silver </span></td>
+                <td class="transition-metals">47<br><span class="element-abbreviation">Cd</span><br><span class="element-name"> Cadmium </span></td>
+                <td class="post-transition">48<br><span class="element-abbreviation">In</span><br><span class="element-name"> Indium </span></td>
+                <td class="post-transition">49<br><span class="element-abbreviation">Sn</span><br><span class="element-name"> Tin </span></td>
+                <td class="metaloid">49<br><span class="element-abbreviation">Sb</span><br><span class="element-name"> Antimony </span></td>
+                <td class="metaloid">51<br><span class="element-abbreviation">Te</span><br><span class="element-name"> Tellurium </span></td>
+                <td class="halogen">52<br><span class="element-abbreviation">I</span><br><span class="element-name"> Iodine </span></td>
+                <td class="nobel-gas">54<br><span class="element-abbreviation">Xe</span><br><span class="element-name"> Xenon </span></td>
+            </tr>
+            <tr>
+                <td class="alkali-metals">55<br><span class="element-abbreviation">Cs</span><br><span class="element-name"> Caesium </span></td>
+                <td class="alkali-earth">56<br><span class="element-abbreviation">Ba</span><br><span class="element-name"> Barium </span></td>
+                <td colspan="2" id="lanthanides-hover">57-71</td>
+                <!-- Skip -->
+                <td class="transition-metals">72<br><span class="element-abbreviation">Hf</span><br><span class="element-name"> Hafnium </span></td>
+                <td class="transition-metals">73<br><span class="element-abbreviation">Ta</span><br><span class="element-name"> Tantalum </span></td>
+                <td class="transition-metals">74<br><span class="element-abbreviation">W</span><br><span class="element-name"> Tungsten </span></td>
+                <td class="transition-metals">75<br><span class="element-abbreviation">Re</span><br><span class="element-name"> Rhenium </span></td>
+                <td class="transition-metals">76<br><span class="element-abbreviation">Ir</span><br><span class="element-name"> Osmium </span></td>
+                <td class="transition-metals">77<br><span class="element-abbreviation">Ir</span><br><span class="element-name"> Iridium </span></td>
+                <td class="transition-metals">78<br><span class="element-abbreviation">Pt</span><br><span class="element-name"> Platinum </span></td>
+                <td class="transition-metals">79<br><span class="element-abbreviation">Hg</span><br><span class="element-name"> Gold </span></td>
+                <td class="transition-metals">80<br><span class="element-abbreviation">Hg</span><br><span class="element-name"> Mercury </span></td>
+                <td class="post-transition">81<br><span class="element-abbreviation">Tl</span><br><span class="element-name"> Thallium </span></td>
+                <td class="post-transition">82<br><span class="element-abbreviation">Pb</span><br><span class="element-name"> Lead </span></td>
+                <td class="post-transition">83<br><span class="element-abbreviation">Bi</span><br><span class="element-name"> Bismuth </span></td>
+                <td class="post-transition">84<br><span class="element-abbreviation">Po</span><br><span class="element-name"> Polononium </span></td>
+                <td class="halogen">85<br><span class="element-abbreviation">At</span><br><span class="element-name"> Astatine </span></td>
+                <td class="nobel-gas">86<br><span class="element-abbreviation">Rn</span><br><span class="element-name"> Radon </span></td>
+            </tr>
+            <tr>
+                <td class="alkali-metals">87<br><span class="element-abbreviation">Fr</span><br><span class="element-name"> Forrealtium </span></td>
+                <td class="alkali-earth">88<br><span class="element-abbreviation">Ra</span><br><span class="element-name"> Radium </span></td>
+                <td colspan="2" id="actinides-hover">89-103</td>
+                <td class="transition-metals">104<br><span class="element-abbreviation">Rf</span><br><span class="element-name"> Rutherfordium </span></td>
+                <td class="transition-metals">105<br><span class="element-abbreviation">Db</span><br><span class="element-name"> Dubnium </span></td>
+                <td class="transition-metals">106<br><span class="element-abbreviation">Sg</span><br><span class="element-name"> Seaborgium </span></td>
+                <td class="transition-metals">107<br><span class="element-abbreviation">Bh</span><br><span class="element-name"> Bohrium </span></td>
+                <td class="transition-metals">108<br><span class="element-abbreviation">Hs</span><br><span class="element-name"> Hassium </span></td>
+                <td class="transition-metals">109<br><span class="element-abbreviation">Mt</span><br><span class="element-name"> Meitnerium </span></td>
+                <td class="transition-metals">110<br><span class="element-abbreviation">Ds</span><br><span class="element-name"> Darmstadtium </span></td>
+                <td class="transition-metals">111<br><span class="element-abbreviation">Rg</span><br><span class="element-name"> Roentgenium </span></td>
+                <td class="transition-metals">112<br><span class="element-abbreviation">Cn</span><br><span class="element-name"> Copernicium </span></td>
+                <td class="post-transition">113<br><span class="element-abbreviation">Nh</span><br><span class="element-name"> Nihonium </span></td>
+                <td class="post-transition">114<br><span class="element-abbreviation">Fl</span><br><span class="element-name"> Flerovium </span></td>
+                <td class="post-transition">115<br><span class="element-abbreviation">Mc</span><br><span class="element-name"> Moscovium </span></td>
+                <td class="post-transition">116<br><span class="element-abbreviation">Lv</span><br><span class="element-name"> Tennesine </span></td>
+                <td class="halogen">117<br><span class="element-abbreviation">Ts</span><br><span class="element-name"> Oganesson </span></td>
+                <td class="post-transition">118<br><span class="element-abbreviation">Og</span><br><span class="element-name"> Radon </span></td>
+            </tr>
+            <tr id="emptySpace">
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td class="lanthanides">57<br><span class="element-abbreviation">La</span><br><span class="element-name"> Lanthanum </span></td>
+                <td class="lanthanides">58<br><span class="element-abbreviation">Ce</span><br><span class="element-name"> Cerium </span></td>
+                <td class="lanthanides">59<br><span class="element-abbreviation">Pr</span><br><span class="element-name"> Praseodymium </span></td>
+                <td class="lanthanides">60<br><span class="element-abbreviation">Nd</span><br><span class="element-name"> Neodymium </span></td>
+                <td class="lanthanides">61<br><span class="element-abbreviation">Pm</span><br><span class="element-name"> Promethium </span></td>
+                <td class="lanthanides">62<br><span class="element-abbreviation">Sm</span><br><span class="element-name"> Samarium </span></td>
+                <td class="lanthanides">63<br><span class="element-abbreviation">Eu</span><br><span class="element-name"> Europium </span></td>
+                <td class="lanthanides">64<br><span class="element-abbreviation">Gd</span><br><span class="element-name"> Gadolinium </span></td>
+                <td class="lanthanides">65<br><span class="element-abbreviation">Tb</span><br><span class="element-name"> Terbium </span></td>
+                <td class="lanthanides">66<br><span class="element-abbreviation">Dy</span><br><span class="element-name"> Dysprosium </span></td>
+                <td class="lanthanides">67<br><span class="element-abbreviation">Ho</span><br><span class="element-name"> Holmium </span></td>
+                <td class="lanthanides">68<br><span class="element-abbreviation">Er</span><br><span class="element-name"> Erbium </span></td>
+                <td class="lanthanides">69<br><span class="element-abbreviation">Tm</span><br><span class="element-name"> Thulium </span></td>
+                <td class="lanthanides">70<br><span class="element-abbreviation">Yb</span><br><span class="element-name"> Ytterbium </span></td>
+                <td class="lanthanides">71<br><span class="element-abbreviation">Lu</span><br><span class="element-name"> Lutetium </span></td>
+                <td colspan="1"></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td class="actinides">89<br><span class="element-abbreviation">Ac</span><br><span class="element-name"> Actinium </span></td>
+                <td class="actinides">90<br><span class="element-abbreviation">Th</span><br><span class="element-name"> Thorium </span></td>
+                <td class="actinides">91<br><span class="element-abbreviation">Pa</span><br><span class="element-name"> Protactinium </span></td>
+                <td class="actinides">92<br><span class="element-abbreviation">U</span><br><span class="element-name"> Uranium </span></td>
+                <td class="actinides">93<br><span class="element-abbreviation">Np</span><br><span class="element-name"> Neptunian </span></td>
+                <td class="actinides">94<br><span class="element-abbreviation">Pu</span><br><span class="element-name"> Plutonium </span></td>
+                <td class="actinides">95<br><span class="element-abbreviation">Am</span><br><span class="element-name"> Americium </span></td>
+                <td class="actinides">96<br><span class="element-abbreviation">Cm</span><br><span class="element-name"> Curium </span></td>
+                <td class="actinides">97<br><span class="element-abbreviation">Bk</span><br><span class="element-name"> Berkelium </span></td>
+                <td class="actinides">98<br><span class="element-abbreviation">Cf</span><br><span class="element-name"> Californium </span></td>
+                <td class="actinides">99<br><span class="element-abbreviation">Es</span><br><span class="element-name"> Einsteinium </span></td>
+                <td class="actinides">100<br><span class="element-abbreviation">Fm</span><br><span class="element-name"> Fermium </span></td>
+                <td class="actinides">101<br><span class="element-abbreviation">Md</span><br><span class="element-name"> Mendelevium </span></td>
+                <td class="actinides">102<br><span class="element-abbreviation">Ni</span><br><span class="element-name"> Nobelium </span></td>
+                <td class="actinides">103<br><span class="element-abbreviation">Lr</span><br><span class="element-name"> Lawrencium </span></td>
+                <td colspan="1"></td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div id="element-info-modal">
+        <div id="exit-button">X</div>
+        <div id="modal-content">
+            <div class="inline-modal">
+                <div id="bohr-model"></div>
+            </div>
+            
+            <h3 id="current-element-name">Copium</h3>
+            <p id="loading-holder"> Loading... </p>
+            <p id="atomicnum-holder"></p>
+            <p id="electroneg-holder"></p>
+            <p id="element-info-wiki"></p>
+
+            
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+

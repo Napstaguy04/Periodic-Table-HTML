@@ -1,0 +1,1 @@
+In order for each element's info to pop up, reload the page 2x. There will be some elements that won't have info (for example caesium and Mercury), due to different UK and US spellings. 

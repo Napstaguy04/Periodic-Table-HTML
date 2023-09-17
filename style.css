@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    background-color: #000000;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+span.element-name {
+    font-size: 0.5vw !important;
+    color: #454545;
+    word-wrap:normal;
+}
+
+.element-abbreviation { 
+    font-weight:bold;
+}
+
+td:not([colspan]) {
+    transition: transform 0.25s;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+td:hover:not([colspan]) {
+    z-index: 2;
+    transform: scale(1.5);
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+.periodic-table {
+    overflow-x: hidden;
+}
+
+table.periodic-table {
+    margin: 0 auto;
+    table-layout: fixed;
+    width: calc(65vw);
+}
+
+#periodic-table-legend {
+    margin: 0 auto;
+    table-layout: fixed;
+    width: calc(65vw);
+}
+
+table.periodic-table tr td:not([colspan]){
+    background-color: #a9caeb;
+    border-radius: 5px;
+}
+
+table.periodic-table tr td[colspan]{
+    color: white;
+}
+
+table.periodic-table tr td{
+    text-align: center;
+}
+
+/* Classes */
+
+.reactive-nonmetal {
+    background-color: #00b6bc !important;
+}
+
+.reactive-nonmetal .element-name{
+    color: #003739;
+}
+.nobel-gas {
+    background-color: #329090 !important;
+}
+
+.transition-metals {
+    background-color: #f53951 !important;
+    color: white;
+}
+
+.transition-metals .element-name{
+    color: #f8c5cc  ;
+}
+
+.alkali-metals {
+    background-color: #1b67c9 !important;
+    color: white;
+}
+
+.alkali-metals .element-name{
+    color: #b5d0f0 !important;
+}
+
+.alkali-earth {
+    background-color: #a0679e !important;
+}
+
+.alkali-earth .element-name{
+    color: #d0b8d0 !important;
+}
+
+.halogen {
+    background-color: #59cf6e !important;
+}
+
+.halogen .element-name{
+    color: #afedbb !important;
+}
+
+.metaloid {
+    background-color: #f5b659 !important;
+}
+
+.metaloid .element-name{
+    color: #5c4000 !important;
+}
+
+.post-transition {
+    background-color: #a0679e !important;
+}
+
+.post-transition .element-name{
+    color: #d0b8d0 !important;
+}
+
+.unknown {
+    background-color: #859998 !important;
+    color: white;
+}
+
+.unknown .element-name{
+    color: #f82882 !important;
+}
+
+/* Metal classes */
+.actinides {
+    transition: background-color 0.25s;
+    color: white !important;
+}
+
+#actinides-hover {
+    transition: background-color 0.25s;
+}
+
+#actinides-hover:hover {
+    background-color: #047408 !important;
+    cursor: pointer;
+}
+
+#lanthanides {
+    transition: background-color 0.25s;
+}
+
+#lanthanides-hover {
+    transition: background-color 0.25s;
+}
+
+#lanthanides-hover:hover {
+    background-color: #f03d8b !important;
+    cursor: pointer;
+}
+
+#element-info-modal {
+    color: black;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+#inline-modal{
+    display: flex;
+    justify-content: space-around;
+}
+
+#exit-button {
+    color: whitesmoke;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+#modal-content {
+    background-color: #fefefe;
+    
+    position: absolute;
+    float: left;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 2%;
+
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%; 
+}
+
+#bohr-model {
+    background-color: rgb(209, 202, 202);
+}
+
+#title {
+    text-align: center;
+}
+
+#element-info-modal {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    overflow-x: hidden;/* Needed for initial hidden state */
+}
+
+#element-info-wiki {
+    height: 10em;
+    overflow-y: scroll;
+}
+
+#empty-space td {
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+#periodic-table-legend-example {
+    background-color: #00b6bc !important;
+    color: white;
+}
