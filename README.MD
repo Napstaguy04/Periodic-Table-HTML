@@ -1,4 +1,4 @@
-# Periodic Table
+# 🔬 Interractive Periodic Table HTML 
 
 A simple yet fully interactive periodic table fully written in pure CSS and Jquery. 
 
